@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODEST</title>
+
+    <link rel="icon" href="icon.png"type="icon">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:"Opens sans",sans-serif ;
+        }
+        .head{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+        }
+
+        .test{
+            background-color: white;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.937);
+            position: fixed;
+            width: 100%;
+        }
+
+        .firstpage{
+            background-image:url(background4.webp);
+        }
+
+        .basic{
+            display:flex;
+            justify-content: center;
+        }
+        .Menu{
+            overflow: hidden;
+            margin: 0 auto;
+            top: 0;
+            position: sticky;
+            height: 45px;
+
+        }
+        .Menu a{
+            text-align: center;
+            color: black;
+            padding: 14px 16px;
+            font-size: 20px;
+            font-family:Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            float: right;
+        }
+        .Menu a:hover{
+            color:darkgray;
+        }
+        #login{
+            float: right;
+        }
+
+        .main_section{
+            width: 100%;
+            height: 730px;
+        }
+        .intro{
+            padding-left: 250px;
+            padding-top: 250px;
+            font-size:xx-large;
+            color: white;
+            float: left;
+        }
+
+        button{
+            background: grey;
+            color: #000;
+            font-weight: 600;
+            border: none;
+            padding: 15px 30px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+            border: 2px solid white;
+            transition: 0.3s ease;            
+        }
+        button:hover{
+            color: #fff;
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+        .about_me{
+            background-image: url(white_colorbackgroun.webp);
+            height: 1000px;
+        }
+
+        .me{
+            float: right;
+            padding-right: 300px;
+            padding-top: 220px;
+        }
+        
+        .footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            height: 400px;
+        }
+        .footer-logo {
+            flex: 1;
+        }
+        .footer-contact,
+        .footer-social {
+            flex: 1;
+            text-align: center;
+        }
+        .footer-contact p {
+            margin: 5px 0;
+        }
+        .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="firstpage">
+    <div class="test">
+    <header class="head">
+        <span><a href="index.html"><img src="icon.png" width="50"></a></span>
+    </header>
+        <hr>
+    
+    <!--Menu section-->
+    <nav class="Menu">
+        <div class="basic">
+        <a href="index.html">Home</a>
+        <a href="#m1">About</a>
+        <a href="LearnCoding.html">Learn Coding</a>
+        <a href="ContactMe.html">Contact Me</a>
+        <a href="LoginPage.html" id="login">Login</a>
+        </div>
+    </nav>
+    </div>
+    <!--Main section-->
+    <div class="main_section">
+    <main>
+        <section>
+            <p class="intro"><span style="font-size: 20px;">Hi there! I'm</span><br>
+            <span style="font-size: larger;font-weight: bold;line-height: 60px;">Santanu Mangaraj,<br>
+            a B.Tech Student based<br>
+            in Odisha,India</span><br>
+            <span style="font-size: large;line-height: 80px;font-family: 'Courier New', Courier, monospace;">"Coding: Where Logic Becomes Magic"</span>
+            </p>
+            <img src="Me1.webp" class="me" width="700px">
+        </section><br><br>
+        <section style="padding-top: 460px;padding-left: 260px; padding-bottom: 5px;">
+            <form action="#m1">
+                <button type="submit">LEARN MORE</button><
+            </form>
+        </section>
+    </main>
+    </div>
+    </div>
+
+    
+    <div class="about_me" id="m1">
+    <span>
+        <p><img src="Me2.webp" alt="me" width="500px" style="float: left;padding-left: 150px;padding-top: 150px; padding-bottom: 150px;">
+        <p style="padding-left: 600px;padding-top: 160px; font-size: xx-large;font-weight: bold;"
+        >"Exploring Frontiers: My Journey<br> in Web Development"
+        </p>
+        <p style="padding-left: 600px; padding-top: 30px;font-size:20px;font-family:Georgia, 'Times New Roman', Times, serif;line-height: 1.4;"><b style="color: grey;">Welcome to my digital space!</b> I am <b style="color: grey;">Santanu Mangaraj</b>, a passionate<br> Web Developer based in Odisha. With a curious mind and a love for<br> Coding, I navigate the intricate realms of Web Development with<br> enthusiasm and dedication.<br><br>
+
+            As a CODEST, I thrive on the constant pursuit of knowledge and innovation.<br> My journey has been shaped by a blend of formal education, hands-on experience,<br> and an insatiable appetite for growth. Whether I'm delving into the complexities<br> of coding, collaborating with diverse teams, or embarking on creative projects,<br> I approach each endeavor with a unique blend of creativity and analytical thinking.<br><br>
+            
+            On this platform, I aim to share my insights, experiences, and discoveries.<br> You'll find a collection of my work, reflections on my professional journey, and<br> perhaps a glimpse into the personal interests that fuel my creativity. <br>I believe in the power of collaboration and open dialogue, so feel free to connect<br> with me on social media platform or drop me a message. Let's embark on<br> a journey of exploration and learning together.<br><br>
+            
+            Thank you for visiting, and I look forward to connecting with you!</p>
+    </span>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-logo">
+          <a href="#"><img src="CODEST-logos_white.webp" alt="My Logo" width="350px"></a>
+        </div>
+        <div class="footer-contact">
+            <p><h1 style="text-decoration:underline;">Contact Me</h1></p><br>
+          <p style="font-size: large;">Mobile: <a href="tel:+919556466480" style="text-decoration: none;color: white;">+91 9556466480</a></p>
+          <p style="font-size: large;">Email:- <a href="mailto:santanumangaraj80@gmail.com?Subject=For%20Convience" style="text-decoration:none;color: white;">Santanumangaraj80@gmail.com</a></p>
+        </div>
+        <div class="footer-social">
+          <p><h1 style="text-decoration:underline;">Social</h1></p><br>
+          <a href="https://www.facebook.com/profile.php?id=100029261656787&mibextid=ZbWKwL" target="_main"><img src="facebooklogo.webp" alt="Facebook" width="50px"></a>
+          <a href="https://www.instagram.com/duh.its.mangaraj?igsh=MTR3aXVieWg1d2JrNg==" target="_main"><img src="instagramlogo.webp" alt="Instagram" width="50px"></a>
+          <a href="https://www.linkedin.com/in/santanu-mangaraj?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_main"><img src="linkedinlogo.webp" alt="LinkedIn" width="50px"></a>
+          <a href="https://x.com/SMangaraj09?t=5Dan4IT6Fo2GjmMFmXER5w&s=09" target="_main"><img src="twitterlogo.webp" alt="Twitter" width="50px"></a>
+        </div>
+      </footer>
+</body>
+</html>

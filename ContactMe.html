@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:"Opens sans",sans-serif ;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            width: 100%;
+            padding:0 10px;
+        }
+
+        body::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url(background3.webp);
+            background-position: center;
+            background-size: cover;
+        }
+
+        .container{
+            width: 500px;
+            border-radius: 8px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(9px);
+            -webkit-backdrop-filter: blur(9px);
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2{
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .input_field{
+            position: relative;
+            border-bottom: 2px solid #ccc;
+            margin: 15px 0;
+        }
+
+        .input_field label{
+            color: white;
+        }
+
+        .input_field input{
+            background: transparent;
+            width: 300px;
+            height: 30px;
+            font-size: medium;
+            border: gray;
+            outline: none;
+            border: none;
+        }
+
+        .select_field{
+            line-height: 40px;
+
+        }
+        .select_field label{
+            color: white;
+        }
+        .select_field select{
+            background:transparent;
+            width: 400px;
+            height: 30px;   
+            color: white;  
+        }
+        .select_field select option{
+            background-color: grey;
+           }
+
+        textarea{
+            border: 2px solid grey;
+            background:transparent;
+            color: black;
+            font-size: medium;
+        }
+        .textarea_field{
+            color: white;
+            line-height: 50px;
+        }
+
+        button{
+            background: #fff;
+            color: #000;
+            font-weight: 600;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 16px;
+            border: 2px solid transparent;
+            transition: 0.3s ease;
+
+        }
+        button:hover{
+            color: #fff;
+            border-color: #fff;
+            background: rgba(255, 255, 255, 0.15);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+                <h2 style="padding-left: 130px;">Contact Us</h2>
+                <p style="padding-left: 60px; font-size: 20px;">Please fill this form in decent manner</p>
+                
+            <div class="input_field">
+                <label>
+                    Full Name
+                </label><br>
+                    <input type="text" required>
+            </div>
+            <div class="input_field">
+                <label>
+                    EMAIL Address<br>
+                </label>
+                <input type="email" required>
+
+            </div>
+            <div class="select_field">
+                <label>Select your Facing problem</label>
+
+                <select required>
+                    <option>--None--</option>
+                    <option>Reloading problem</option>
+                    <option>Facing problem while login</option>
+                    <option>Could'nt find what you have looking for?</option>
+                </select>
+                
+            </div>
+            <div class="textarea_field">
+                <label>Explain briefly about your problem</label>
+                <textarea rows="4" cols="50"></textarea>
+            </div>
+                
+                <button type="submit">SUBMIT</button></p>
+
+        </form>
+    </div>
+</body>
+</html>
